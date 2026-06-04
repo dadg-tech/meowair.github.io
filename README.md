@@ -11,10 +11,14 @@ repository as-is, while the source code is still split by responsibility.
 ```text
 .
 ├── index.html                  # Page markup and content
+├── robots.txt                  # Search crawler rules
+├── sitemap.xml                 # Search sitemap
+├── CNAME                       # GitHub Pages custom domain
 ├── src/
 │   ├── scripts/
 │   │   ├── app.js              # Browser entry point
 │   │   ├── dom.js              # Shared DOM helpers
+│   │   ├── modal.js            # Modal windows
 │   │   ├── motion.js           # Parallax and dashboard tilt
 │   │   ├── nav.js              # Fixed nav state and anchor scrolling
 │   │   └── reveal.js           # Scroll and chat reveal animations
@@ -78,11 +82,22 @@ Initial setup:
 The workflow uploads the repository root, so `index.html` must remain at the
 root unless the workflow path is changed.
 
-By default GitHub Pages will serve the site on a GitHub domain:
+The project is configured for the custom domain:
 
 ```text
-https://<username>.github.io/<repo>/
+https://meow-air.ru/
 ```
 
-Add a `CNAME` file only after a custom domain is purchased and its DNS records
-point to GitHub Pages.
+Make sure the domain is purchased and its DNS records point to GitHub Pages.
+
+## Search Indexing
+
+Search basics are configured in the repository:
+
+- `index.html` includes canonical URL, robots meta tags, Open Graph/Twitter
+  metadata, and JSON-LD structured data.
+- `robots.txt` allows crawling and points robots to `sitemap.xml`.
+- `sitemap.xml` lists the canonical homepage URL.
+
+After the site is deployed, add `https://meow-air.ru/` to Google Search Console
+and Yandex Webmaster, then submit `https://meow-air.ru/sitemap.xml`.

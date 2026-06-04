@@ -28,6 +28,9 @@ jobs:
           test -f src/styles/main.css
           test -f src/scripts/app.js
           test -f src/scripts/modal.js
+          test -f robots.txt
+          test -f sitemap.xml
+          test -f CNAME
 
       - name: Check public copy
         run: |
@@ -42,6 +45,8 @@ jobs:
           curl --fail --silent --show-error http://127.0.0.1:8000/ > /dev/null
           curl --fail --silent --show-error http://127.0.0.1:8000/src/styles/main.css > /dev/null
           curl --fail --silent --show-error http://127.0.0.1:8000/src/scripts/app.js > /dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8000/robots.txt > /dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8000/sitemap.xml > /dev/null
 
   deploy:
     needs: validate
