@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: CI/CD Pages
 
 on:
   push:
@@ -16,7 +16,35 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate static files
+        run: |
+          test -f index.html
+          test -f src/styles/main.css
+          test -f src/scripts/app.js
+          test -f src/scripts/modal.js
+
+      - name: Check public copy
+        run: |
+          ! grep -RniE 'Amnezia|WireGuard|обфускац|блокиров|DPI|VPN-доступ|обход' index.html README.md src
+
+      - name: Smoke test static server
+        run: |
+          python3 -m http.server 8000 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          sleep 2
+          curl --fail --silent --show-error http://127.0.0.1:8000/ > /dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8000/src/styles/main.css > /dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8000/src/scripts/app.js > /dev/null
+
   deploy:
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
