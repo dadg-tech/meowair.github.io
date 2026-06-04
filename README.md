@@ -1,6 +1,6 @@
-# vpn-tripper landing
+# мяу мяу воздух landing
 
-Static landing page for `vpn-tripper`: a Telegram-first VPN bot that sells
+Static landing page for `мяу мяу воздух`: a Telegram-first VPN bot that sells
 AmneziaWG access through Telegram Stars.
 
 The project intentionally has no build step. GitHub Pages can publish the
@@ -78,3 +78,12 @@ Initial setup:
 
 The workflow uploads the repository root, so `index.html` must remain at the
 root unless the workflow path is changed.
+
+By default GitHub Pages will serve the site on a GitHub domain:
+
+```text
+https://<username>.github.io/<repo>/
+```
+
+Add a `CNAME` file only after a custom domain is purchased and its DNS records
+point to GitHub Pages.
