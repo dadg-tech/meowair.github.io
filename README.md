@@ -1,6 +1,6 @@
-# мяу мяу воздух landing
+# meowair landing
 
-Static landing page for `мяу мяу воздух`: a Telegram-first service for safer
+Static landing page for `meowair`: a Telegram-first service for safer
 internet work with Telegram Stars payments.
 
 The project intentionally has no build step. GitHub Pages can publish the
