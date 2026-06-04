@@ -61,8 +61,7 @@ GitHub Pages environment and handles ES modules consistently.
 - Visual styling and breakpoints: edit `src/styles/main.css`.
 - Scroll behavior, animation triggers, and pointer effects: edit files in
   `src/scripts/`.
-- Telegram bot links currently use `#`; replace them with the production bot URL
-  before launch.
+- Telegram bot links point to `https://t.me/Muimuivozduhbot`.
 
 ## Deployment
 
