@@ -84,7 +84,7 @@ root unless the workflow path is changed.
 The project is configured as the organization GitHub Pages site:
 
 ```text
-https://meowair.github.io/
+https://dadg-tech.github.io/meowair.github.io/
 ```
 
 ## Search Indexing
@@ -96,6 +96,6 @@ Search basics are configured in the repository:
 - `robots.txt` allows crawling and points robots to `sitemap.xml`.
 - `sitemap.xml` lists the canonical homepage URL.
 
-After the site is deployed, add `https://meowair.github.io/` to Google Search
-Console and Yandex Webmaster, then submit
-`https://meowair.github.io/sitemap.xml`.
+After the site is deployed, add `https://dadg-tech.github.io/meowair.github.io/`
+to Google Search Console and Yandex Webmaster, then submit
+`https://dadg-tech.github.io/meowair.github.io/sitemap.xml`.
