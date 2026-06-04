@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dadg-tech.github.io/meowair.github.io/sitemap.xml
+Sitemap: https://meowair.ru/sitemap.xml

@@ -30,6 +30,7 @@ jobs:
           test -f src/scripts/modal.js
           test -f robots.txt
           test -f sitemap.xml
+          test -f CNAME
 
       - name: Check public copy
         run: |
