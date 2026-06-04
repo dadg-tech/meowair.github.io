@@ -497,14 +497,50 @@
         <a href="https://t.me/Muimuivozduhbot" target="_blank" rel="noopener noreferrer">Telegram</a>
         <a href="#how">Документация</a>
         <a href="#">Помощь</a>
-        <a href="#">Статус узлов</a>
+        <a href="#" data-modal-open="node-status-modal">Статус узлов</a>
       </nav>
     </div>
     <div class="container footer__bottom">
       <span>© 2026 мяу мяу воздух</span>
-      <span class="footer__status"><i></i> Все узлы online</span>
+      <button class="footer__status" type="button" data-modal-open="node-status-modal"><i></i> Все узлы online</button>
     </div>
   </footer>
+
+  <div class="modal" id="node-status-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-modal-close></div>
+    <section class="modal__dialog glass" role="dialog" aria-modal="true" aria-labelledby="node-status-title" tabindex="-1">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <span class="eyebrow">Статус узлов</span>
+      <h2 class="modal__title" id="node-status-title">Доступные локации</h2>
+      <p class="modal__sub">Актуальный выбор локации показывается в боте перед подключением.</p>
+
+      <div class="locations">
+        <div class="location">
+          <span class="location__status" aria-hidden="true"></span>
+          <div><strong>Нидерланды</strong><span>Amsterdam</span></div>
+          <em>online</em>
+        </div>
+        <div class="location">
+          <span class="location__status" aria-hidden="true"></span>
+          <div><strong>Германия</strong><span>Frankfurt</span></div>
+          <em>online</em>
+        </div>
+        <div class="location">
+          <span class="location__status" aria-hidden="true"></span>
+          <div><strong>Финляндия</strong><span>Helsinki</span></div>
+          <em>online</em>
+        </div>
+        <div class="location">
+          <span class="location__status" aria-hidden="true"></span>
+          <div><strong>Польша</strong><span>Warsaw</span></div>
+          <em>online</em>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <script type="module" src="src/scripts/app.js"></script>
 </body>
