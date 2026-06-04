@@ -85,7 +85,7 @@ root unless the workflow path is changed.
 The project is configured for the custom domain:
 
 ```text
-https://meow-air.ru/
+https://meowair.ru/
 ```
 
 Make sure the domain is purchased and its DNS records point to GitHub Pages.
@@ -99,5 +99,5 @@ Search basics are configured in the repository:
 - `robots.txt` allows crawling and points robots to `sitemap.xml`.
 - `sitemap.xml` lists the canonical homepage URL.
 
-After the site is deployed, add `https://meow-air.ru/` to Google Search Console
-and Yandex Webmaster, then submit `https://meow-air.ru/sitemap.xml`.
+After the site is deployed, add `https://meowair.ru/` to Google Search Console
+and Yandex Webmaster, then submit `https://meowair.ru/sitemap.xml`.

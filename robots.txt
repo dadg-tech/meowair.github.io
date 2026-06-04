@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://meow-air.ru/sitemap.xml
+Sitemap: https://meowair.ru/sitemap.xml
