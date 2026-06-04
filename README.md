@@ -13,7 +13,6 @@ repository as-is, while the source code is still split by responsibility.
 ├── index.html                  # Page markup and content
 ├── robots.txt                  # Search crawler rules
 ├── sitemap.xml                 # Search sitemap
-├── CNAME                       # GitHub Pages custom domain
 ├── src/
 │   ├── scripts/
 │   │   ├── app.js              # Browser entry point
@@ -82,13 +81,11 @@ Initial setup:
 The workflow uploads the repository root, so `index.html` must remain at the
 root unless the workflow path is changed.
 
-The project is configured for the custom domain:
+The project is configured as the organization GitHub Pages site:
 
 ```text
-https://meowair.ru/
+https://meowair.github.io/
 ```
-
-Make sure the domain is purchased and its DNS records point to GitHub Pages.
 
 ## Search Indexing
 
@@ -99,5 +96,6 @@ Search basics are configured in the repository:
 - `robots.txt` allows crawling and points robots to `sitemap.xml`.
 - `sitemap.xml` lists the canonical homepage URL.
 
-After the site is deployed, add `https://meowair.ru/` to Google Search Console
-and Yandex Webmaster, then submit `https://meowair.ru/sitemap.xml`.
+After the site is deployed, add `https://meowair.github.io/` to Google Search
+Console and Yandex Webmaster, then submit
+`https://meowair.github.io/sitemap.xml`.
