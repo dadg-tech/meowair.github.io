@@ -1,7 +1,7 @@
 # мяу мяу воздух landing
 
-Static landing page for `мяу мяу воздух`: a Telegram-first VPN bot that sells
-AmneziaWG access through Telegram Stars.
+Static landing page for `мяу мяу воздух`: a Telegram-first service for safer
+internet work with Telegram Stars payments.
 
 The project intentionally has no build step. GitHub Pages can publish the
 repository as-is, while the source code is still split by responsibility.

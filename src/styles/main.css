@@ -247,7 +247,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 700; letter-spacing
   padding: 11px 14px; border-radius: 14px; box-shadow: 0 16px 40px -16px rgba(0,0,0,.7);
   animation: float 6s ease-in-out infinite; animation-delay: var(--d);
 }
-.chip--config { top: 4%; right: -6%; }
+.chip--access { top: 4%; right: -6%; }
 .chip--secure { bottom: 6%; left: -8%; }
 .chip__ic { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px;
   color: var(--cyan); background: rgba(58,216,255,.12); border: 1px solid rgba(58,216,255,.22); }
@@ -465,7 +465,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 700; letter-spacing
   .hero__stats { flex-wrap: wrap; gap: 16px; }
   .hero__stats-sep { display: none; }
   .features, .trust { grid-template-columns: 1fr; }
-  .chip--config { right: 0; top: 0; }
+  .chip--access { right: 0; top: 0; }
   .chip--secure { left: 0; bottom: 0; }
   .nav__cta { display: none; }
   .timeline__item { gap: 16px; }
